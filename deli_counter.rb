@@ -18,10 +18,10 @@ end
 
 def now_serving(katz_deli)
   if katz_deli.length == 0 
-    return "The line is currently empty."
-  end
-  current = katz_deli.shift
-  return "Currently serving #{current}."
+    return "There is nobody waiting to be served!"
+  else
+    current = katz_deli.shift
+    return "Currently serving #{current}."
 end
 
 
