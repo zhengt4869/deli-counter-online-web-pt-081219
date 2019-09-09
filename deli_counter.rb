@@ -17,6 +17,7 @@ end
 
 def now_serving(katz_deli)
   current = katz_deli.shift
+  return "Currently serving #{current}."
 end
 
 
