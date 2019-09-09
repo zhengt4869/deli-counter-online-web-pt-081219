@@ -3,11 +3,12 @@ katz_deli = []
 def line(katz_deli)
   if katz_deli.length == 0 
     return "The line is currently empty."
-  end 
-  res = "The line is currently: "
-  katz_deli.each_with_index{|val, index|
-    res+= "#{index+1}. #{val}"
-  }
+  else 
+    res = "The line is currently: "
+    katz_deli.each_with_index{|val, index|
+      res+= "#{index+1}. #{val}"
+    }
+  end
   return res
 end
 
@@ -22,6 +23,7 @@ def now_serving(katz_deli)
   else
     current = katz_deli.shift
     return "Currently serving #{current}."
+  end
 end
 
 
